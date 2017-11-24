@@ -6,6 +6,33 @@
 	<artifactId>Restaurant</artifactId>
 	<version>1.0.0</version>
 	<packaging>war</packaging>
-
 	<name>Restaurant</name>
+	<!-- Start of dependencies -->
+	<dependencies>
+	
+	</dependencies>
+	<!-- End of dependencies -->
+	
+	<build>
+		<!-- Start of plugins -->
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<!-- or whatever version you use -->
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+				<executions>
+					<execution>
+						<id>copy-dependencies</id>
+						<phase>package</phase>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+		<!-- end of plugins -->
+	</build>
 </project>
